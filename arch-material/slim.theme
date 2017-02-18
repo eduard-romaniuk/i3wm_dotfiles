@@ -1,0 +1,29 @@
+# Solarized Spiral theme for Arch Linux - 1366x768
+# by Wesley Merkel
+
+# messages (ie: shutdown)
+msg_color               #93a1a1
+msg_font                Verdana:size=18:bold:dpi=75
+msg_x                   50%
+msg_y                   35%
+msg_shadow_color        #000000
+msg_shadow_xoffset      3
+msg_shadow_yoffset      3
+
+# background style
+background_style        stretch
+background_color        #002b36
+
+# input controls
+input_panel_x           44%
+input_panel_y           50%
+input_name_x            490
+input_name_y            222
+input_pass_x            490
+input_pass_y            277
+input_font          	Verdana:size=12:bold
+input_color             #586e75
+
+# turn off prompts
+username_msg
+password_msg
