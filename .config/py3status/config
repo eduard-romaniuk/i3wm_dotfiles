@@ -1,0 +1,78 @@
+order += "volume_status"
+order += "backlight"
+order += "battery_level"
+order += "arch_updates"
+order += "imap"
+order += "weather_yahoo"
+order += "keyboard_layout"
+order += "clock"
+order += "online_status"
+order += "whoami"
+
+battery_level {
+	blocks = ""
+	format = "{icon} {percent}%"
+	hide_when_full = True
+	format_notify_charging = " {percent}%"
+	color_bad = "#FFFFFF"
+	color_charging = "#FFFFFF"
+	color_degraded = "#FFFFFF"
+	color_good = "#FFFFFF"
+}
+
+clock {
+	format_time = " %y.%m.%d   %H:%M"
+}
+
+keyboard_layout {
+	cache_timeout = 1
+	format = " {layout}"
+	color_ru = "#ffffff"
+	color_us = "#ffffff"
+	color_ua = "#ffffff"
+}
+
+arch_updates {
+	format = " {pacman}/{aur}"
+	hide_if_zero = True
+}
+
+backlight {
+	cache_timeout = 1
+	format = " {level}%"
+}
+
+volume_status {
+	cache_timeout = 1
+	format = " {percentage}%"
+	format_muted = " mute"
+	thresholds = [(0, "#FFFFFF")]
+	color_muted = "#FFFFFF21"
+}
+
+weather_yahoo {
+	forecast_days = 0
+	woeid = "924938"
+	format_today = "{icon} {temp}°{units} {text}"
+
+	icon_cloud = ""
+	icon_rain = ""
+	icon_snow = ""
+	icon_sun = ""
+	icon_default = ""
+}
+
+imap {
+	imap_server = "imap.gmail.com"
+	user = "email"
+	password = "pass"
+	format = " {unseen}"
+	hide_if_zero = True
+	new_mail_color = "#FFFFFF"
+	on_click 1 = "exec firefox mail.google.com"
+}
+
+whoami {
+	on_click 1 = "exec i3-nagbar -t warning -m 'Do you really want to shutdown PC?' -b 'Shutdown' 'shutdown now'"
+	on_click 2 = ""
+}

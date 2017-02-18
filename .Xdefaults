@@ -1,0 +1,75 @@
+! URXVT SCROLLBAR AND CURSOR STYLE
+!------------------------------------------------
+
+URxvt*saveLines: 			300000
+URxvt.scrollBar: 			false
+!URxvt*scrollstyle:			plain
+URxvt*cursorBlink: 			false
+URxvt*cursorUnderline: 		true
+URxvt*cursorColor: 			#51c4d4
+
+! URXVT PADDINGS
+!------------------------------------------------
+
+URxvt.letterSpace : 1
+URxvt.internalBorder: 20
+
+! URXVT COLORS
+!------------------------------------------------
+
+! special
+*.foreground:   #c0c0c0
+!*.background:   #1d1f21
+urxvt*depth: 32
+urxvt*background: rgba:0000/0000/0200/cc00
+
+*.cursorColor:  #c5c8c6
+
+! black
+*.color0:       #1d1f21
+*.color8:       #969896
+
+! red
+*.color1:       #cc342b
+*.color9:       #cc342b
+
+! green
+*.color2:       #198844
+*.color10:      #198844
+
+! yellow
+*.color3:       #fba922
+*.color11:      #fba922
+
+! blue
+*.color4:       #3971ed
+*.color12:      #3971ed
+
+! magenta
+*.color5:       #a36ac7
+*.color13:      #a36ac7
+
+! cyan
+*.color6:       #3971ed
+*.color14:      #3971ed
+
+! white
+*.color7:       #c0c0c0
+*.color15:	#f3f3f3
+
+!-------------------
+! ROFI theme       |
+!-------------------
+
+rofi.lines: 5
+rofi.eh: 1
+rofi.width: 100
+rofi.padding: 500
+rofi.font: System San Francisco Display 18
+
+rofi.color-enabled: true
+rofi.color-window: argb:82002b36, argb:0002b36, argb:0002b36
+rofi.color-normal: argb:0002b36, #ffffff, argb:0002b36, argb:0002b36, #74b3e0
+rofi.color-active: argb:0002b36, #268bd2, argb:0002b36, argb:0002b36, #ffffff
+rofi.color-urgent: argb:0002b36, #ffffff, argb:0002b36, argb:0002b36, #fdf6e3
+

@@ -1,0 +1,7 @@
+#!/bin/bash
+IMG=~/.config/locker/img.png
+BG=~/.config/locker/bg.png
+scrot $BG
+convert $BG -blur 0x5 $BG
+convert $BG $IMG -gravity center -composite -matte $BG
+i3lock -i $BG
