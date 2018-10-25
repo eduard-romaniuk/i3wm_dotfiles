@@ -1,3 +1,8 @@
+### i3wm config
+
+#### Description:
+My i3wm config
+
 ```
 distro: ArchLinux
 dm: slim (arch-material)
